@@ -1,19 +1,18 @@
-def input_number(msg):
-    positive_value=True
-    while positive_value:
+def input_number_float(msg):
+    while True:
         try:
             number=float(input(msg))
-            t=False
-        except:
+            return number
+        except ValueError: 
             print("Введенно не число")
-    return number
+            
 
 def get_frac(num):
 
     return num - int(num)
     
 list = []
-size_list=int(input('Введите размер списка: '))
+size_list= input_number_float('Введите размер списка: ')
 
 for i in range(size_list):
    number=float(input(f'Введите число {i+1}: '))

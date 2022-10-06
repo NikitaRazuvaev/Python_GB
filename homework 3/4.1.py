@@ -1,7 +1,17 @@
 # Задайте список из нескольких чисел. Напишите программу, которая найдет сумму элементов списка, стоящих на нечётных позиции.
-from operator import index
 
-size_list=int(input('Введите размер списка: '))
+def input_number(msg):
+    while True:
+        try:
+            number=int(input(msg))
+            return number
+        except ValueError: 
+            print("Введенно не число")
+            
+    
+
+
+size_list= input_number('Введите размер списка: ')
 list = [] 
 sum_list = 0
 for i in range(size_list):
