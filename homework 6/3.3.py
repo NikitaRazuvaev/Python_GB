@@ -43,13 +43,13 @@ def get_result():
 game_over = False
 player1 = True
 
-while game_over == False:
+while not game_over:
  
     # 1. Показываем карту
     print_maps()
  
     # 2. Спросим у играющего куда делать ход
-    if player1 == True:
+    if player1:
         symbol = "X"
         step = int(input("Человек 1, ваш ход: "))
     else:
