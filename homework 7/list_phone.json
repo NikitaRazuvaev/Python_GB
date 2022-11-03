@@ -1,0 +1,19 @@
+
+{
+    "full_list_phone":{
+           "list_phone":[  
+            {
+                "surname":"Иванова",
+                "name":"Раиса",
+                "phone_number":"8(950)455-55-77",
+                "description":"Бух"
+             },
+            {
+                "surname":"Попова",
+                "name":"Анжела",
+                "phone_number":"8(950)475-65-37",
+                "description":"Глав.Бух"
+            }
+        ]
+    }
+}
