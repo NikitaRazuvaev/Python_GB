@@ -9,7 +9,7 @@ root.title("Калькулятор")
 
 
 buttons = (('7','8','9','/','','5'),
-           ('4','5','6','*','','5'),
+           ('4','5','6','*','Z','5'),
            ('1','2','3','-','log'),
            ('0','.','=','+','ln'),
            )
@@ -73,6 +73,9 @@ def operation():
 #Натуральный логарифм
     if operation == 'ln':
         result = math.log(operand2)
+    if operation == 'Z':
+        result = complex(operand1,operand2)
+
     label_calc.configure(text=str(result))
 label_calc.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
